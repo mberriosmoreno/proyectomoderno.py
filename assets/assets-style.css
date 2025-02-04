@@ -1,0 +1,49 @@
+/* Estilos Base */
+:root {
+    --primary-color: #6c5ce7;
+    --secondary-color: #a8a5e6;
+    --accent-color: #ff7675;
+}
+
+/* Tarjetas Modernas */
+.feature-card {
+    background: linear-gradient(145deg, #ffffff, #f8f9fa);
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    box-shadow: 0 4px 20px rgba(108, 92, 231, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Logo Animado */
+.logo-container {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Títulos Dinámicos */
+h1 {
+    background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 2rem;
+}
+
+/* Efectos de Hover en Sidebar */
+[data-testid="stSidebarNav"] li div {
+    transition: all 0.2s ease;
+}
+
+[data-testid="stSidebarNav"] li div:hover {
+    color: var(--primary-color) !important;
+    transform: scale(1.05);
+}
